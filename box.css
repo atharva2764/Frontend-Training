@@ -1,4 +1,4 @@
-:root{
+:root {
   --primary-color: black;
   --initial-padding: 10px;
   --font-color: white;
@@ -40,9 +40,8 @@
     display: flex;
     justify-content: space-around;
     /* width: 90%; */
-      background-color: var(--primary-color);
-  color: var(--font-color);
-
+    background-color: var(--primary-color);
+    color: var(--font-color);
   }
 }
 
@@ -61,4 +60,21 @@
     justify-content: space-between;
     align-items: center;
   }
+}
+
+
+td:nth-child(odd){
+  background-color: gray;
+}
+
+table{
+ 
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,td{
+  border: 1px solid red;
+}
+img{
+  float: left;
 }
