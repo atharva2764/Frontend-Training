@@ -1,34 +1,139 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <script src="style.js "></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <ul>
-        <li>JAVA</li>
-        <li>Python</li>
-        <li>HTML</li>
+      <li>JAVA</li>
+      <li>Python</li>
+      <li>HTML</li>
     </ul>
 
-    <ol type= i>
-        <li>JS</li>
-        <li>Mysql</li>
-        <li>NoSql</li>
-        <li>Mongodb</li>
+    <ol type="i">
+      <li>JS</li>
+      <li>Mysql</li>
+      <li>NoSql</li>
+      <li>Mongodb</li>
     </ol>
 
-
     <dl>
-        <dt>JAVA</dt>
-        <dd>is a Pro lang</dd>
-        <dt>Python</dt>
-        <dd>is a Pro lang</dd>
-        <dt>JS</dt>
-        <dd>is a Pro lang</dd>
+      <dt>JAVA</dt>
+      <dd>is a Pro lang</dd>
+      <dt>Python</dt>
+      <dd>is a Pro lang</dd>
+      <dt>JS</dt>
+      <dd>is a Pro lang</dd>
     </dl>
-</body>
+
+    <table border="2px solid black">
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+      </tr>
+      <tr>
+        <td>Atharva</td>
+        <td>23</td>
+        <td>male</td>
+      </tr>
+    </table>
+
+    <form action="">
+      Name : <input type="text" name="" id="" /> <br />
+      Email : <input type="email" name="" id="" /> <br />
+      No. : <input type="number" name="" id="" /> <br />
+      Password : <input type="password" name="" id="" /> <br />
+
+      <label for="Python">
+        Name : <input type="checkbox" name="" id="" /> <br />
+      </label>
+
+      <label for="JAVA">
+        Name : <input type="checkbox" name="" id="" /> <br />
+      </label>
+
+      <label for="HTML">
+        Name : <input type="checkbox" name="" id="" /> <br />
+      </label>
+
+      DATE : <input type="date" name="" id="" /> <br />
+      Appointment Time : <input type="time" name="" id="" /> <br />
+      <fieldset>
+        <legend>Payment Method</legend>
+
+        <label>
+          <input type="radio" name="payment" value="CASH" />
+          CASH
+        </label>
+
+        <label>
+          <input type="radio" name="payment" value="COD" />
+          COD
+        </label>
+
+        <label>
+          <input type="radio" name="payment" value="UPI" />
+          UPI
+        </label>
+      </fieldset>
+      Date Time : <input type="datetime" name="" id="" /> <br />
+      Time : <input type="time" name="" id="" /> <br />
+    </form>
+
+    <iframe
+      src="https://www.youtube.com/results?search_query=javascript+arraow+function+master"
+      frameborder="2px"
+      width="500px"
+      height="700px"
+    ></iframe>
+
+    <canvas id="myCanvas" width="500" height="300"></canvas>
+
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      const ctx = canvas.getContext("2d");
+
+      ctx.fillRect(50, 50, 200, 100);
+    </script>
+
+    <canvas id="myCanvas1" width="500" height="300"></canvas>
+
+    <script>
+      const canvas1 = document.getElementById("myCanvas1");
+      const ctx1 = canvas1.getContext("2d");
+      ctx1.beginPath();
+      ctx1.arc(150, 100, 50, 0, Math.PI * 2);
+      ctx1.fill();
+    </script>
+
+    <svg width="500" height="300">
+      <rect x="50" y="50" width="200" height="100" fill="blue" />
+    </svg>
+
+    <div
+      style="background-color: red; width: 200px; height: 50 px"
+      draggable="true"
+    >
+      HELOO
+    </div>
+
+    <section>
+      <div class="posi" id="d1">Box 1</div>
+      <div class="posi" id="d2">Box 2</div>
+      <div class="posi" id="d3">Box 3</div>
+    </section>
+  </body>
+
+  <div class="search">
+    <form action="">
+      <input type="search" name="Searchbar" id="bar " placeholder="search"/>
+    </form>
+    <button>Q</button>
+  </div>
 </html>
